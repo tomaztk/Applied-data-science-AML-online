@@ -1,0 +1,6 @@
+Instructions on running Bicep from VS Code
+
+az login --use-device-code
+az group create --name RG_AML_Bits2023 --location westeurope
+az deployment group create --resource-group RG_AML_Bits2023 --template-file /Users/tomazkastrun/Documents/tomaztk_github/Applied_Data_science_with_ML/9_1_Bicep/template.bicep
+
