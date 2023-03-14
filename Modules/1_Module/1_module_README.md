@@ -46,6 +46,14 @@ az group create --name RG_AML_Bits2023 --location westeurope
 az deployment group create --resource-group RG_AML_Bits2023 --template-file [your-path-here]/1_module_template.bicep
 ```
 
+Alternatevly, 
+```cli
+az account list --output table
+az account set -s 7bb22fd9-xxxxxx
+# or
+az login --scope https://management.core.windows.net//.default
+```
+
 The code above will prompt you to login to your Azure Subscription and deploy all the resources that are defined in the Bicep template.
 
 ## Creating the SQL Server database
